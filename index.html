@@ -674,7 +674,7 @@
                     </svg> Data Analyst & Machine Learning</span>
                 <h1 class="title">Halo, saya <span
                         style="background:linear-gradient(90deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent">Ulfa
-                        Damayanti</span> — mengubah data menjadi insight yang berdampak.</h1>
+                        Damayanti</span> — mengubah data menjadi insight yang berdampak</h1>
                 <p class="subtitle">Fokus pada <b>SQL</b>, <b>Python (Pandas)</b>, <b>Tableau</b>/<b>Power BI</b>, dan
                     <b>Excel</b> lanjutan. Berpengalaman membangun dashboard dan proyek Machine Learning (CNN/VGG16)
                     end‑to‑end.
@@ -901,30 +901,78 @@
                     <div class="tl-dot" aria-hidden="true"></div>
                     <h4>Web Developer & Administrator — Maritim Muda Nusantara</h4>
                     <div class="meta">Feb 2024 — Jun 2024 · Jakarta Timur (Internship)</div>
-                    <p class="mt-2 muted">Membangun fitur katalog CRUD, halaman pengumuman, dan desain v3 di
+                    <p class="mt-2 muted">Membangun fitur katalog CRUD Admin panel, membuat halaman pengumuman, dan Redesain v3 di
                         hub.maritimmuda.id.</p>
+                </div>
+                <div class="tl-item reveal">
+                    <div class="tl-dot" aria-hidden="true"></div>
+                    <h4>Machine Learning - BMI Prediction (Obesity Dataset)</h4>
+                    <div class="meta">Jun 2023 – Jul 2023 · Politeknik Caltex Riau (Academic Projects)</div>
+                    <p class="mt-2 muted">Membuat Model Machine Learning (supervised learning) dengan algoritma  Random Forest dan membangun apikasi BMI serta mengintegrasikan model machine learning ke dalam mobile</p>
+                </div><div class="tl-item reveal">
+                    <div class="tl-dot" aria-hidden="true"></div>
+                    <h4>Deep Learning - Mango Leaf Disease Classification (CNN)</h4>
+                    <div class="meta">Nov 2024 -Jan 2025 · Politeknik Caltex Riau (Academic Projects)</div>
+                    <p class="mt-2 muted">Membangun model CNN dengan akurasi 95% untuk klasifikasi penyakit daun mangga dan Mengintegrasikan model ke dalam website interaktif untuk digunakan pengguna.</p>
+                </div><div class="tl-item reveal">
+                    <div class="tl-dot" aria-hidden="true"></div>
+                    <h4>Deep Learning & Mobile App Chili Leaf Disease Classification (CNN, VGG-16) – PA</h4>
+                    <div class="meta">Nov 2024 - May 2025  · Politeknik Caltex Riau (Project Akhir)</div>
+                    <p class="mt-2 muted">Membangun model CNN dengan akurasi 92% dan model VGG-16 dengan akurasi 99% untuk klasifikasi penyakit daun cabai dan membangun aplikasi seluler berbasis Android yang terintegrasi dengan model untuk deteksi penyakit secara langsung.</p>
+                </div>
+                 <div class="tl-item reveal">
+                    <div class="tl-dot"></div>
+                    <h4>Data Visualization - Netflix Dataset (Tableau)</h4>
+                    <div class="meta">Nov 2022 – Jan 2023· Politeknik Caltex Riau (Academic Projects)</div>
+                    <p class="mt-2 muted">Membuat 5 grafik interaktif dan 3 dasbor menggunakan Tableau untuk menganalisis pola konten Netflix dan Menghasilkan wawasan tentang tren genre dan distribusi konten untuk rekomendasi strategis.</p>
                 </div>
                 <div class="tl-item reveal">
                     <div class="tl-dot"></div>
                     <h4>System Analyst / Back‑End — Sumatera Jobs Center</h4>
                     <div class="meta">Jun 2022 — Jul 2022</div>
-                    <p class="mt-2 muted">CRUD lowongan, aplikasi Laravel, dan uji performa JMeter.</p>
+                    <p class="mt-2 muted">Mengembangkan aplikasi berbasis web menggunakan framework Laravel, Merancang halaman arahan dan dasbor pengguna untuk memudahkan navigasi pengguna dan Menguji kinerja aplikasi menggunakan Apache JMeter, menghasilkan optimasi waktu muat hingga ±30%.</p>
                 </div>
                 <div class="tl-item reveal">
                     <div class="tl-dot"></div>
                     <h4>PHP Developer — Cha’s Olshop</h4>
                     <div class="meta">Jun 2022 — Aug 2022</div>
-                    <p class="mt-2 muted">Katalog CRUD, dashboard pelanggan, pemesanan via WhatsApp.</p>
+                    <p class="mt-2 muted">Membangun dasbor pelanggan dengan sistem peran untuk menyederhanakan manajemen katalog, Mengembangkan fitur katalog CRUD untuk kontrol admin dan Mengintegrasikan fitur pemesanan WhatsApp untuk proses pemesanan yang lebih cepat dan nyaman.</p>
                 </div>
                 <div class="tl-item reveal">
                     <div class="tl-dot"></div>
-                    <h4>System Analyst / Java — Nina Laundry</h4>
+                    <h4>System Analyst / Java Developer — Nina Laundry</h4>
                     <div class="meta">Jun 2022 — Jul 2022</div>
-                    <p class="mt-2 muted">OOP, desain arsitektur, halaman pemesanan.</p>
+                    <p class="mt-2 muted">Merancang antarmuka, arsitektur, dan alur proses bisnis untuk sistem pemesanan laundry, Menerapkan konsep OOP dalam pengembangan aplikasi berbasis Java dan Mengembangkan beranda dan halaman pemesanan untuk memfasilitasi pemesanan online bagi pelanggan.</p>
                 </div>
             </div>
         </div>
     </section>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const reveals = document.querySelectorAll(".reveal");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      }
+    });
+  }, { threshold: 0.1 });
+
+  reveals.forEach(el => observer.observe(el));
+});
+</script>
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-in-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
 
     <section id="education">
         <div class="container">
