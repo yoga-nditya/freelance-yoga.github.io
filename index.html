@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ulfa Damayanti — Data Analyst & Machine Learning (SQL • Python • Tableau)</title>
-    <meta name="description"
-        content="Portfolio modern Ulfa Damayanti: Data Analyst berfokus pada analisis end‑to‑end, dashboarding, dan proyek Machine Learning (CNN/VGG16)." />
+    <title>Software Developer at LippoMalls Indonesia & Freelance Web Developer</title>
+    <meta name="description" content="Software Developer at LippoMalls Indonesia & Freelance Web Developer. Layanan pembuatan website, aplikasi web, dan bantuan penyusunan skripsi." />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <style>
         :root {
             --bg: #0b0f1a;
@@ -17,80 +17,78 @@
             --card: #0f162b;
             --text: #e6e9f2;
             --muted: #99a3ba;
-            --brand: #22c55e;
+            --brand: #3b82f6;
             --brand-2: #06b6d4;
-            --ring: 0 0 0 3px rgba(34, 197, 94, .35);
+            --ring: 0 0 0 3px rgba(59, 130, 246, .35);
             --shadow: 0 8px 30px rgba(0, 0, 0, .35);
             --radius: 16px;
-            --maxw: 1100px
+            --maxw: 1100px;
         }
 
         [data-theme="light"] {
-            --bg: #f7f8fb;
-            --bg-soft: #fff;
+            --bg: #ffffff;
+            --bg-soft: #ffffff;
             --card: #fff;
             --text: #0f172a;
             --muted: #51607a;
-            --brand: #16a34a;
+            --brand: #2563eb;
             --brand-2: #0891b2;
-            --ring: 0 0 0 3px rgba(22, 163, 74, .25);
-            --shadow: 0 10px 25px rgba(2, 6, 23, .08)
+            --ring: 0 0 0 3px rgba(37, 99, 235, .25);
+            --shadow: 0 10px 25px rgba(2, 6, 23, .08);
         }
 
         * {
-            box-sizing: border-box
+            box-sizing: border-box;
         }
 
-        html,
-        body {
-            height: 100%
+        html, body {
+            height: 100%;
         }
 
         body {
             margin: 0;
             font-family: "Jost", system-ui, -apple-system, Segoe UI, Roboto;
             color: var(--text);
-            background:
-                radial-gradient(1200px 600px at 90% -10%, rgba(34, 197, 94, .22), transparent 60%),
-                radial-gradient(900px 500px at -10% 10%, rgba(6, 182, 212, .18), transparent 50%), var(--bg);
-            line-height: 1.65
+            background: var(--bg);
+            line-height: 1.65;
         }
 
         a {
             color: inherit;
-            text-decoration: none
+            text-decoration: none;
         }
 
         img {
             max-width: 100%;
-            display: block
+            display: block;
         }
 
         .container {
             max-width: var(--maxw);
             margin-inline: auto;
-            padding-inline: 24px
+            padding-inline: 24px;
         }
 
+        /* ========== HEADER ========== */
         header {
             position: sticky;
             top: 0;
             z-index: 50;
             background: linear-gradient(to bottom, rgba(0, 0, 0, .35), transparent), var(--bg);
-            backdrop-filter: saturate(1.1) blur(6px)
+            backdrop-filter: saturate(1.1) blur(6px);
         }
 
         .nav {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 16px 0
+            padding: 16px 0;
         }
 
         .nav .left {
             display: flex;
             align-items: center;
-            gap: 14px
+            gap: 14px;
         }
 
         .logo {
@@ -98,46 +96,46 @@
             align-items: center;
             gap: 10px;
             font-weight: 700;
-            letter-spacing: .3px
-        }
-
-        .logo-mark {
-            width: 32px;
-            height: 32px;
-            border-radius: 10px;
-            background: linear-gradient(135deg, var(--brand), var(--brand-2));
-            display: grid;
-            place-items: center;
-            box-shadow: var(--shadow)
-        }
-
-        .logo-mark svg {
-            filter: drop-shadow(0 2px 6px rgba(0, 0, 0, .25))
+            letter-spacing: .3px;
         }
 
         .menu {
             display: flex;
             gap: 18px;
             font-weight: 500;
-            color: var(--muted)
+            color: var(--muted);
         }
 
         .menu a {
             padding: 8px 10px;
-            border-radius: 10px
+            border-radius: 10px;
         }
 
         .menu a:hover {
             color: var(--text);
-            background: rgba(34, 197, 94, .12)
+            background: rgba(59, 130, 246, .12);
         }
 
         .nav-cta {
             display: flex;
             align-items: center;
-            gap: 12px
+            gap: 12px;
         }
 
+        .mobile-toggle {
+            display: none;
+        }
+
+        @media (max-width: 860px) {
+            .menu {
+                display: none;
+            }
+            .mobile-toggle {
+                display: inline-flex;
+            }
+        }
+
+        /* ========== BUTTONS ========== */
         .btn {
             --p: var(--brand);
             display: inline-flex;
@@ -151,69 +149,40 @@
             box-shadow: var(--shadow);
             font-weight: 600;
             transition: .2s transform;
-            cursor: pointer
+            cursor: pointer;
         }
 
         .btn:hover {
-            transform: translateY(-1px)
-        }
-
-        .btn.ghost {
-            background: transparent;
-            color: var(--text);
-            border: 1px solid rgba(34, 197, 94, .35)
+            transform: translateY(-1px);
         }
 
         .btn.small {
             padding: 8px 12px;
             border-radius: 10px;
-            font-weight: 600
+            font-weight: 600;
         }
 
         .icon {
             width: 18px;
-            height: 18px
+            height: 18px;
         }
 
-        .theme-toggle {
-            width: 42px;
-            height: 42px;
-            border-radius: 12px;
-            display: grid;
-            place-items: center;
-            border: 1px solid rgba(34, 197, 94, .35);
-            background: transparent
-        }
-
-        .mobile-toggle {
-            display: none
-        }
-
-        @media (max-width:860px) {
-            .menu {
-                display: none
-            }
-
-            .mobile-toggle {
-                display: inline-flex
-            }
-        }
-
+        /* ========== HERO SECTION ========== */
         .hero {
-            padding: 72px 0 40px
+            padding: 72px 0 40px;
         }
 
         .hero-inner {
             display: grid;
             grid-template-columns: 1.15fr .85fr;
             gap: 28px;
-            align-items: center
+            align-items: center;
         }
 
         @media (max-width: 860px) {
             .hero-inner {
                 grid-template-columns: 1fr;
-                gap: 18px
+                gap: 18px;
             }
         }
 
@@ -222,70 +191,55 @@
             align-items: center;
             gap: 8px;
             padding: 6px 10px;
-            border: 1px dashed rgba(34, 197, 94, .45);
+            border: 1px dashed rgba(59, 130, 246, .45);
             border-radius: 999px;
             color: var(--muted);
             font-weight: 600;
-            font-size: .9rem
+            font-size: .9rem;
         }
 
         .title {
             font-size: clamp(28px, 5vw, 52px);
             line-height: 1.1;
             margin: .6rem 0 1rem;
-            font-weight: 800
+            font-weight: 800;
         }
 
         .subtitle {
             color: var(--muted);
-            font-size: clamp(15px, 2.2vw, 18px)
+            font-size: clamp(15px, 2.2vw, 18px);
         }
 
         .hero-cta {
             display: flex;
             gap: 12px;
             margin-top: 20px;
-            flex-wrap: wrap
-        }
-
-        .social {
-            display: flex;
-            gap: 10px;
-            margin-top: 16px
-        }
-
-        .social a {
-            display: inline-flex;
-            width: 40px;
-            height: 40px;
-            border-radius: 12px;
-            border: 1px solid rgba(34, 197, 94, .35);
-            align-items: center;
-            justify-content: center
+            flex-wrap: wrap;
         }
 
         .avatar-wrap {
-            position: relative
+            position: relative;
         }
 
         .avatar-card {
             position: relative;
             border-radius: 24px;
-            background: linear-gradient(135deg, rgba(34, 197, 94, .18), rgba(6, 182, 212, .18));
+            background: linear-gradient(135deg, rgba(59, 130, 246, .18), rgba(6, 182, 212, .18));
             padding: 14px;
-            border: 1px solid rgba(34, 197, 94, .25);
-            box-shadow: var(--shadow)
+            border: 1px solid rgba(59, 130, 246, .25);
+            box-shadow: var(--shadow);
         }
 
         .avatar {
             width: 100%;
             aspect-ratio: 1/1;
             border-radius: 18px;
-            background: conic-gradient(from 180deg at 50% 50%, #22c55e22, #06b6d422, #22c55e22);
+            background: conic-gradient(from 180deg at 50% 50%, #3b82f622, #06b6d422, #3b82f622);
             display: grid;
             place-items: center;
             color: var(--muted);
-            font-weight: 600
+            font-weight: 600;
+            font-size: 2rem;
         }
 
         .floating-badge {
@@ -293,108 +247,103 @@
             left: -14px;
             bottom: -14px;
             background: var(--bg-soft);
-            border: 1px solid rgba(34, 197, 94, .3);
+            border: 1px solid rgba(59, 130, 246, .3);
             padding: 10px 12px;
             border-radius: 14px;
             display: flex;
             gap: 10px;
             align-items: center;
             box-shadow: var(--shadow);
-            animation: float 6s ease-in-out infinite
+            animation: float 6s ease-in-out infinite;
         }
 
         @keyframes float {
-
-            0%,
-            100% {
-                transform: translateY(0)
+            0%, 100% {
+                transform: translateY(0);
             }
-
             50% {
-                transform: translateY(-6px)
+                transform: translateY(-6px);
             }
         }
 
+        /* ========== SECTIONS ========== */
         section {
-            padding: 58px 0
+            padding: 58px 0;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         .section-title {
             font-size: 28px;
-            margin: 0 0 14px
+            margin: 0 0 14px;
         }
 
         .section-desc {
             color: var(--muted);
-            margin: 0 0 28px
+            margin: 0 0 28px;
         }
 
+        /* ========== GRID & CARDS ========== */
         .grid {
             display: grid;
-            gap: 18px
+            gap: 18px;
         }
 
         .grid-2 {
-            grid-template-columns: repeat(2, minmax(0, 1fr))
+            grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 
         .grid-3 {
-            grid-template-columns: repeat(3, minmax(0, 1fr))
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .grid-4 {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
         }
 
         @media (max-width: 960px) {
-
-            .grid-3,
-            .grid-2 {
-                grid-template-columns: 1fr
+            .grid-3, .grid-2, .grid-4 {
+                grid-template-columns: 1fr;
             }
         }
 
         .card {
             background: var(--card);
-            border: 1px solid rgba(34, 197, 94, .2);
+            border: 1px solid rgba(59, 130, 246, .2);
             border-radius: var(--radius);
-            box-shadow: var(--shadow)
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(0.95);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
         }
 
         .card.padded {
-            padding: 18px
+            padding: 18px;
         }
 
+        /* ========== CHIPS & BADGES ========== */
         .chips {
             display: flex;
             gap: 8px;
-            flex-wrap: wrap
+            flex-wrap: wrap;
         }
 
         .chip {
             padding: 6px 10px;
             border-radius: 999px;
-            border: 1px solid rgba(34, 197, 94, .35);
+            border: 1px solid rgba(59, 130, 246, .35);
             font-weight: 600;
             color: var(--muted);
-            font-size: .9rem
-        }
-
-        .project {
-            display: flex;
-            flex-direction: column;
-            overflow: hidden
-        }
-
-        .project .thumb {
-            aspect-ratio: 16/9;
-            background: linear-gradient(45deg, rgba(34, 197, 94, .15), rgba(6, 182, 212, .2));
-            border-bottom: 1px solid rgba(34, 197, 94, .2)
-        }
-
-        .project .body {
-            padding: 16px
-        }
-
-        .project h3 {
-            margin: 0 0 6px;
-            font-size: 20px
+            font-size: .9rem;
         }
 
         .badge {
@@ -404,99 +353,156 @@
             padding: 6px 8px;
             border-radius: 10px;
             font-size: 12px;
-            border: 1px solid rgba(34, 197, 94, .35);
-            color: var(--muted)
+            border: 1px solid rgba(59, 130, 246, .35);
+            color: var(--muted);
         }
 
-        .project .actions {
-            margin-top: 12px;
+        /* ========== PROJECT CARDS ========== */
+        .project {
             display: flex;
-            gap: 10px
+            flex-direction: column;
+            overflow: hidden;
         }
 
-        .timeline {
-            position: relative
-        }
-
-        .timeline::before {
-            content: "";
-            position: absolute;
-            left: 14px;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: linear-gradient(var(--brand), transparent)
-        }
-
-        .tl-item {
+        .project .thumb {
+            aspect-ratio: 16/9;
+            background: linear-gradient(45deg, rgba(59, 130, 246, .15), rgba(6, 182, 212, .2));
+            border-bottom: 1px solid rgba(59, 130, 246, .2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--muted);
+            font-weight: 600;
+            overflow: hidden;
             position: relative;
-            padding-left: 44px;
-            margin-bottom: 24px
         }
 
-        .tl-dot {
+        /* ====== VIDEO: fill seluruh area tanpa meninggalkan gap ====== */
+        .project .thumb video {
             position: absolute;
-            left: 6px;
-            top: 4px;
-            width: 16px;
-            height: 16px;
+            inset: 0;               /* fill parent */
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;      /* isi seluruh area (bisa crop) */
+            object-position: center;
+        }
+
+        .project .thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .project .body {
+            padding: 16px;
+        }
+
+        .project h3 {
+            margin: 0 0 6px;
+            font-size: 20px;
+        }
+
+        /* ========== TESTIMONIALS ========== */
+        .testimonial {
+            padding: 20px;
+            border-radius: var(--radius);
+            background: var(--card);
+            border: 1px solid rgba(59, 130, 246, .2);
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .testimonial:hover {
+            transform: scale(0.95);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .testimonial-avatar {
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             background: var(--brand);
-            box-shadow: 0 0 0 3px rgba(34, 197, 94, .25)
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
         }
 
-        .tl-item h4 {
-            margin: 0 0 6px
-        }
-
-        .tl-item .meta {
-            color: var(--muted);
-            font-weight: 600
-        }
-
-        .contact-card {
+        /* ========== GALLERY SECTION ========== */
+        .gallery {
             display: grid;
-            grid-template-columns: 1.2fr .8fr;
-            gap: 18px
+            gap: 18px;
         }
 
-        @media (max-width: 900px) {
-            .contact-card {
-                grid-template-columns: 1fr
-            }
+        .gallery-item {
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: var(--card);
+            border: 1px solid rgba(59, 130, 246, .2);
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .input {
+        .gallery-item:hover {
+            transform: scale(0.95);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        }
+
+        .gallery-item img {
             width: 100%;
-            padding: 12px 14px;
-            border-radius: 12px;
-            border: 1px solid rgba(34, 197, 94, .35);
-            background: transparent;
-            color: var(--text)
-        }
-
-        textarea.input {
-            min-height: 140px;
-            resize: vertical
-        }
-
-        .input:focus {
-            outline: none;
-            box-shadow: var(--ring);
-            border-color: transparent
-        }
-
-        footer {
-            padding: 28px 0;
-            color: var(--muted)
-        }
-
-        img.avatar {
-            width: 100%;
-            aspect-ratio: 1/1;
-            border-radius: 18px;
+            height: 200px;
             object-fit: cover;
             display: block;
+        }
+
+        .gallery-caption {
+            padding: 12px;
+            text-align: center;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        /* ========== CONTACT ========== */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contact-info li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .contact-cta {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        /* ========== FOOTER ========== */
+        footer {
+            padding: 28px 0;
+            color: var(--muted);
         }
 
         .footer-inner {
@@ -504,9 +510,10 @@
             align-items: center;
             justify-content: space-between;
             gap: 16px;
-            flex-wrap: wrap
+            flex-wrap: wrap;
         }
 
+        /* ========== UTILITIES ========== */
         .sr-only {
             position: absolute;
             width: 1px;
@@ -515,78 +522,54 @@
             margin: -1px;
             overflow: hidden;
             clip: rect(0, 0, 0, 0);
-            border: 0
+            border: 0;
         }
 
         .muted {
-            color: var(--muted)
+            color: var(--muted);
         }
 
         .mt-2 {
-            margin-top: 8px
+            margin-top: 8px;
         }
 
         .mt-3 {
-            margin-top: 12px
-        }
-
-        .mt-4 {
-            margin-top: 16px
-        }
-
-        .mt-6 {
-            margin-top: 24px
+            margin-top: 12px;
         }
 
         .mb-0 {
-            margin-bottom: 0
+            margin-bottom: 0;
         }
 
         .flex {
-            display: flex
+            display: flex;
         }
 
         .items-center {
-            align-items: center
+            align-items: center;
         }
 
         .justify-between {
-            justify-content: space-between
-        }
-
-        .gap-2 {
-            gap: 8px
-        }
-
-        .gap-3 {
-            gap: 12px
-        }
-
-        .gap-4 {
-            gap: 16px
+            justify-content: space-between;
         }
 
         .wrap {
-            flex-wrap: wrap
-        }
-
-        .txt-center {
-            text-align: center
+            flex-wrap: wrap;
         }
 
         .hidden {
-            display: none
+            display: none;
         }
 
         .reveal {
             opacity: 0;
             transform: translateY(16px);
-            transition: .6s ease
+            transition: .6s ease;
         }
 
         .reveal.visible {
             opacity: 1;
-            transform: none
+            transform: none;
         }
 
         #toTop {
@@ -596,68 +579,44 @@
             z-index: 40;
             opacity: 0;
             visibility: hidden;
-            transition: .2s
+            transition: .2s;
         }
 
         #toTop.show {
             opacity: 1;
-            visibility: visible
+            visibility: visible;
         }
     </style>
 </head>
 
 <body>
+    <!-- ========== HEADER ========== -->
     <header>
         <div class="container nav">
             <div class="left">
                 <span class="logo">
-                    <span class="logo-mark" aria-hidden="true">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M3 12h6m6 0h6M12 3v6m0 6v6" />
-                        </svg>
-                    </span>
-                    <span>Ulfa Damayanti<span style="opacity:.55"></span></span>
+                    <span>Yoga</span>
                 </span>
                 <nav class="menu" aria-label="Primary">
                     <a href="#home">Home</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#experience">Experience</a>
+                    <a href="#jasa">Jasa</a>
+                    <a href="#projects">Project</a>
+                    <a href="#testimoni">Testimoni</a>
+                    <a href="#galeri">Galeri</a>
                     <a href="#contact">Contact</a>
                 </nav>
             </div>
-            <div class="nav-cta">
-                <button id="themeBtn" class="theme-toggle" aria-label="Toggle theme">
-                    <svg class="icon" id="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="4" />
-                        <path
-                            d="M12 2v2m0 16v2M4 12H2m20 0h-2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5" />
-                    </svg>
-                    <svg class="icon hidden" id="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3c0 .34 0 .68.05 1A7 7 0 0 0 21 13a9 9 0 0 1 0-.21Z" />
-                    </svg>
-                </button>
-                <a class="btn ghost small" href="#projects"><svg class="icon" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2">
-                        <path d="M3 12h18M3 6h18M3 18h18" />
-                    </svg> Lihat Karya</a>
-                <button class="btn small mobile-toggle" id="openMenu" aria-expanded="false"
-                    aria-controls="mobileMenu"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2">
-                        <path d="M4 6h16M4 12h16M4 18h16" />
-                    </svg></button>
-            </div>
         </div>
+        
         <div id="mobileMenu" class="hidden" aria-hidden="true">
             <div class="container" style="padding-bottom:14px">
                 <div class="card padded">
                     <nav class="grid" style="gap:8px">
                         <a href="#home">Home</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#skills">Skills</a>
-                        <a href="#experience">Experience</a>
+                        <a href="#jasa">Jasa</a>
+                        <a href="#projects">Project</a>
+                        <a href="#testimoni">Testimoni</a>
+                        <a href="#galeri">Galeri</a>
                         <a href="#contact">Contact</a>
                     </nav>
                 </div>
@@ -665,379 +624,352 @@
         </div>
     </header>
 
+    <!-- ========== HERO SECTION ========== -->
     <main id="home" class="hero">
         <div class="container hero-inner">
             <div>
-                <span class="tag"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2">
+                <span class="tag">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M3 12h18M12 2v20" />
-                    </svg> Data Analyst & Machine Learning</span>
-                <h1 class="title">Halo, saya <span
-                        style="background:linear-gradient(90deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent">Ulfa
-                        Damayanti</span> — mengubah data menjadi insight yang berdampak</h1>
-                <p class="subtitle">Fokus pada <b>SQL</b>, <b>Python (Pandas)</b>, <b>Tableau</b>/<b>Power BI</b>, dan
-                    <b>Excel</b> lanjutan. Berpengalaman membangun dashboard dan proyek Machine Learning (CNN/VGG16)
-                    end‑to‑end.
+                    </svg> 
+                    Software Developer at LippoMalls Indonesia & Freelance Web Developer
+                </span>
+                
+                <h1 class="title">
+                    Halo, saya <span style="background:linear-gradient(90deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent">Yoga</span> — solusi untuk tugas dan skripsi anda
+                </h1>
+                
+                <p class="subtitle">
+                    Spesialis <b>Web & Mobile Development</b>, <b>Joki Skripsi</b>, dan <b>Joki Tugas</b>.
+                    Siap membantu mewujudkan ide Anda menjadi website yang menarik dan membantu menyelesaikan kebutuhan anda dengan tepat waktu.
                 </p>
+                
                 <div class="hero-cta">
-                    <a class="btn" href="#contact"><svg class="icon" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2">
+                    <a class="btn" href="#contact">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M4 4h16v16H4z" />
                             <path d="m22 4-10 8L2 4" />
-                        </svg> Hire Me</a>
-
-                </div>
-                <div class="social">
-                    <a href="https://github.com/ulfa03" aria-label="GitHub"><svg class="icon" viewBox="0 0 24 24"
-                            fill="currentColor">
-                            <path
-                                d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.5-1.4-1.9-1.4-1.9-1.2-.8.1-.8.1-.8 1.3.1 2 .  1.4 2 .  1.4 1.2 2 3 1.4 3.7 1 .1-.9.5-1.4.9-1.8-2.6-.3-5.4-1.3-5.4-5.8 0-1.3.5-2.3 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.9.1 3.2.8.9 1.2 2 1.2 3.2 0 4.5-2.8 5.5-5.5 5.8.5.4 1 1.2 1 2.5v3.7c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z" />
-                        </svg></a>
-                    <a href="https://www.linkedin.com/in/ulfa-damayanti-/" aria-label="LinkedIn"><svg class="icon"
-                            viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V24h-4zM8 8.5h3.8v2.1h.1c.5-1 1.8-2.1 3.8-2.1 4 0 4.8 2.6 4.8 6v7.5H16.5V16c0-1.9 0-4.3-2.6-4.3s-3 2-3 4.1V24H8z" />
-                        </svg></a>
-                    <a href="https://wa.me/6282387325740" aria-label="WhatsApp"><svg class="icon" viewBox="0 0 24 24"
-                            fill="currentColor">
-                            <path
-                                d="M.5 12a11.5 11.5 0 0 0 1.7 6.1L0 24l6-2a11.5 11.5 0 1 0-5.5-9.9Zm11.5 9.5a9.5 9.5 0 1 1 0-19 9.5 9.5 0 0 1 0 19Zm-4-6.6c.2.4 1.1 2.1 3.5 3 2.4 1 2.9.7 3.4.6.6-.1 1.8-.8 2-1.6.2-.8.2-1.5.1-1.6l-1.6-.9c-.1 0-.3-.1-.5.2-.2.3-.6.8-.8.9-.2.1-.4.2-.8 0-.4-.1-1.6-.6-2.9-1.9-1.1-1.1-1.9-2.4-2.1-2.8-.2-.4 0-.6.1-.8.1-.2.2-.3.3-.5.1-.2.1-.3 0-.5L8 9.1c-.1-.1-.3-.2-.5-.2-.2 0-.5 0-.8.4-.3.4-1 1-1 2.5 0 1.5 1 3 1.3 3.1Z" />
-                        </svg></a>
+                        </svg> 
+                        Hubungi Saya
+                    </a>
                 </div>
             </div>
+            
             <div class="avatar-wrap">
                 <div class="avatar-card reveal">
-                    <img class="avatar" src="gambar/ulfa.jpg" alt="Foto Profil Ulfa Damayanti" />
+                    <div class="avatar">
+                        <img src="gambar/profile.png" alt="Avatar">
+                    </div>
+                </div>
+                <div class="floating-badge">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>Tersedia untuk Project</span>
                 </div>
             </div>
-        </div>
         </div>
     </main>
 
-    <section id="skills">
+    <!-- ========== SERVICES SECTION ========== -->
+    <section id="jasa">
         <div class="container">
-            <h2 class="section-title">Keahlian & Tools</h2>
-            <p class="section-desc">End‑to‑end analytics: ekstraksi data, modeling, hingga storytelling.</p>
+            <h2 class="section-title">Jasa yang Ditawarkan</h2>
+            <p class="section-desc">Layanan profesional untuk kebutuhan website dan akademik anda.</p>
+            
             <div class="grid grid-3">
+                <!-- Service 1 -->
                 <div class="card padded reveal">
-                    <h3 class="mb-0">Data Wrangling</h3>
-                    <p class="muted mt-2">SQL (CTE/Window), Excel/Google Sheets, Python (Pandas/NumPy)</p>
+                    <h3 class="mb-0">Web & Mobile Development</h3>
+                    <p class="muted mt-2">
+                        Pembuatan website responsif, aplikasi web/Mobile, dan sistem informasi sesuai kebutuhan.
+                    </p>
                     <div class="chips mt-3">
-                        <span class="chip">MySQL</span>
-                        <span class="chip">Oracle</span>
-                        <span class="chip">MongoDB</span>
+                        <span class="chip">Python(Flask)</span>
+                        <span class="chip">PHP(Laravel)</span>
+                        <span class="chip">React/(Next.js)</span>
+                        <span class="chip">Mobile/(React Native)</span>
                     </div>
                 </div>
+                
+                <!-- Service 2 -->
                 <div class="card padded reveal">
-                    <h3 class="mb-0">Analytics & Modeling</h3>
-                    <p class="muted mt-2">Klasifikasi CNN/VGG16, supervised learning, feature engineering</p>
+                    <h3 class="mb-0">Joki Skripsi</h3>
+                    <p class="muted mt-2">
+                        Bantuan penyusunan skripsi, coding aplikasi penelitian, analisis data, dan konsultasi.
+                    </p>
                     <div class="chips mt-3">
-                        <span class="chip">Scikit‑learn</span>
-                        <span class="chip">TensorFlow/Keras</span>
-                        <span class="chip">Evaluation</span>
+                        <span class="chip">Coding</span>
+                        <span class="chip">Analisis Data</span>
+                        <span class="chip">Konsultasi</span>
                     </div>
                 </div>
+                
+                <!-- Service 3 -->
                 <div class="card padded reveal">
-                    <h3 class="mb-0">BI & Storytelling</h3>
-                    <p class="muted mt-2">Tableau dashboards, data storytelling, pelaporan KPI</p>
+                    <h3 class="mb-0">Joki Tugas & Skripsi</h3>
+                    <p class="muted mt-2">
+                        Melayani pembuatan tugas kuliah, laporan, dengan hasil rapi, cepat, dan profesional.
+                    </p>
                     <div class="chips mt-3">
-                        <span class="chip">Tableau</span>
-                        <span class="chip">Power BI</span>
+                        <span class="chip">Cepat & Tepat Waktu</span>
+                        <span class="chip">Bisa Revisi</span>
+                        <span class="chip">Dikerjakan Profesional</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ========== PROJECTS SECTION ========== -->
     <section id="projects">
         <div class="container">
-            <h2 class="section-title">Proyek Pilihan</h2>
-            <p class="section-desc">Analitik & ML yang pernah dikerjakan—dengan link ke repo/preview.</p>
+            <h2 class="section-title">Project yang Pernah Dikerjakan</h2>
+            <p class="section-desc">Berbagai project joki skripsi yang telah diselesaikan.</p>
+            
             <div class="grid grid-3">
+                <!-- Project 1 -->
                 <article class="project card reveal">
                     <div class="thumb">
-                        <img src="gambar/Cnn-mango.webp" alt="CNN Mango Leaf Project" />
+                        <img src="gambar/project (5).jpeg" 
+                             alt="Sistem Informasi Akademik" 
+                             onerror="this.parentElement.innerHTML='Sistem Informasi Akademik'">
                     </div>
                     <div class="body">
                         <div class="flex items-center justify-between wrap">
-                            <h3>Deep Learning — Mango Leaf</h3>
-                            <span class="badge">Python • CNN</span>
+                            <h3>Website Sistem Informasi Akademik Pesantren Uswatun Hasanah</h3>
+                            <span class="badge">Laravel • MySQL</span>
                         </div>
-                        <p class="muted mt-2">Klasifikasi penyakit daun mangga dengan akurasi 95%, integrasi ke website.
+                        <p class="muted mt-2">
+                            Sistem manajemen akademik pesantren dengan fitur pendataan santri, nilai, jadwal, laporan dan notifikasi dengan bot telegram dan fitur lain nya sesuai role.
                         </p>
                         <div class="chips mt-3">
-                            <span class="chip">TensorFlow</span><span class="chip">CNN</span><span
-                                class="chip">Deployment</span>
-                        </div>
-                        <div class="actions">
-                            <a class="btn small" target="_blank" rel="noopener"
-                                href="https://github.com/ulfa03/Klasifikasi-Penyakit-Daun-Mangga-Menggunakan-CNN.git">Repo</a>
+                            <span class="chip">Joki Skripsi</span>
+                            <span class="chip">Full Stack</span>
+                            <span class="chip">Database Design</span>
                         </div>
                     </div>
                 </article>
+                
+                <!-- Project 2 -->
                 <article class="project card reveal">
-                    <div class="thumb">
-                        <img src="gambar/cc.png" alt="CNN Mango Leaf Project" />
-                    </div>
-                    <div class="body">
-                        <div class="flex items-center justify-between wrap">
-                            <h3>Deep Learning — Chili Leaf (CNN & VGG16)</h3>
-                            <span class="badge">Python • VGG16</span>
-                        </div>
-                        <p class="muted mt-2">Model CNN (92%) & VGG16 (99%) untuk penyakit daun cabai; integrasi ke
-                            aplikasi mobile.</p>
-                        <div class="chips mt-3">
-                            <span class="chip">Mobile App</span><span class="chip">Model Serving</span><span
-                                class="chip">CV</span>
-                        </div>
-                        <div class="actions">
-                            <a class="btn small" target="_blank" rel="noopener"
-                                href="https://github.com/ulfa03/Chili-Leaf-Classification-with-CNN-and-CV">Repo
-                                Model</a>
-                            <a class="btn small" target="_blank" rel="noopener"
-                                href="https://github.com/ulfa03/CNN-Based-Classification-of-Chili-Plant-Diseases-from-Leaf-Images-on-Mobile">Repo
-                                Mobile</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="project card reveal">
-                    <div class="thumb">
-                        <img src="gambar/dd.webp" alt="CNN Mango Leaf Project" />
-                    </div>
-                    <div class="body">
-                        <div class="flex items-center justify-between wrap">
-                            <h3>Machine Learning — Obesitas & BMI App</h3>
-                            <span class="badge">Python • Machine learning</span>
-                        </div>
-                        <p class="muted mt-2">Rekayasa fitur & pelatihan model pada dataset obesitas; implementasi ke
-                            aplikasi seluler.</p>
-                        <div class="chips mt-3">
-                            <span class="chip">Feature Eng.</span><span class="chip">Supervised</span><span
-                                class="chip">Random Forest</span></span><span class="chip">Mobile</span>
-                        </div>
-                        <div class="actions">
-                            <a class="btn small" target="_blank" rel="noopener"
-                                href="https://github.com/ulfa03/StayHealth.git">Repo App</a>
-                            <a class="btn small" target="_blank" rel="noopener"
-                                href="https://github.com/ulfa03/Klasifikasi-Tingkat-Obesitas-Menggunakan-Algoritma-Random-Forest.git">Repo
-                                ML</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="project card reveal">
-                    <div class="thumb">
-                        <img src="gambar/dw.png" alt="CNN Mango Leaf Project" />
-                    </div>
-                    <div class="body">
-                        <div class="flex items-center justify-between wrap">
-                            <h3>Tableau — Netflix Storyboard</h3>
-                            <span class="badge">Tableau • Dashboard</span>
-                        </div>
-                        <p class="muted mt-2">5 grafik & 3 dashboard untuk eksplorasi dataset Netflix, insight konten &
-                            tren.</p>
-                        <div class="chips mt-3">
-                            <span class="chip">EDA</span><span class="chip">Storyboard</span><span
-                                class="chip">Insight</span>
-                        </div>
-                        <div class="actions">
-                            <a class="btn small" target="_blank" rel="noopener"
-                                href="https://github.com/ulfa03/Storyboards.git">Repo</a>
-
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project card reveal">
-                    <div class="thumb">
-                        <img src="gambar/ss.webp" alt="CNN Mango Leaf Project" />
-                    </div>
-                    <div class="body">
-                        <div class="flex items-center justify-between wrap">
-                            <h3>Cha’s Olshop</h3>
-                            <span class="badge">Web Developer</span>
-                        </div>
-                        <p class="muted mt-2">Membuat Katalog CRUD, dashboard pelanggan, pemesanan via WhatsApp.
-                        </p>
-                        <div class="chips mt-3">
-                            <span class="chip">System Analis</span><span class="chip">PHP</span><span
-                                class="chip">MySql</span><span class="chip">Hosting</span>
-                        </div>
-                        <div class="actions">
-                            <a class="btn small" target="_blank" rel="noopener"
-                                href="https://github.com/ulfa03/Chas-olshop.git">Repo</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="project card reveal">
-                    <div class="thumb">
-                        <img src="gambar/aa.webp" alt="CNN Mango Leaf Project" />
-                    </div>
-                    <div class="body">
-                        <div class="flex items-center justify-between wrap">
-                            <h3>Design Thinking — Aplikasi Speech-to-Text untuk Tunarungu </h3>
-                            <span class="badge">Design Thinking</span>
-                        </div>
-                        <p class="muted mt-2"> Prototype mobile yang mengconvert gambar menjadi suara dan text menjadi
-                            suara untuk membantu pengguna tunarungu.
-                        </p>
-                        <div class="chips mt-3">
-                            <span class="chip">System Analis</span><span class="chip">Ui/Ux</span>
-                        </div>
-                        <div class="actions">
-                            <a class="btn small" target="_blank" rel="noopener"
-                                href="https://medium.com/@ulfadamayanti79/studi-kasus-ux-re-design-fitur-konversi-gambar-ke-suara-tunanetra-e968992a7cb">Repo</a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience">
-        <div class="container">
-            <h2 class="section-title">Pengalaman</h2>
-            <p class="section-desc">Peran relevan untuk analitik & pengembangan.</p>
-            <div class="timeline">
-                <div class="tl-item reveal">
-                    <div class="tl-dot" aria-hidden="true"></div>
-                    <h4>Web Developer & Administrator — Maritim Muda Nusantara</h4>
-                    <div class="meta">Feb 2024 — Jun 2024 · Jakarta Timur (Internship)</div>
-                    <p class="mt-2 muted">Membangun fitur katalog CRUD Admin panel, membuat halaman pengumuman, dan
-                        Redesain v3 di
-                        hub.maritimmuda.id.</p>
+                <div class="thumb thumb-contain">
+                    <video
+                    src="gambar/project (4).mp4" 
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    onerror="this.parentElement.innerHTML='Video tidak dapat dimuat'">
+                    </video>
                 </div>
-                <div class="tl-item reveal">
-                    <div class="tl-dot" aria-hidden="true"></div>
-                    <h4>Machine Learning - BMI Prediction (Obesity Dataset)</h4>
-                    <div class="meta">Jun 2023 – Jul 2023 · Politeknik Caltex Riau (Academic Projects)</div>
-                    <p class="mt-2 muted">Membuat Model Machine Learning (supervised learning) dengan algoritma Random
-                        Forest dan membangun apikasi BMI serta mengintegrasikan model machine learning ke dalam mobile
+                <div class="body">
+                    <div class="flex items-center justify-between wrap">
+                        <h3>Website E-commerce Fashion</h3>
+                        <span class="badge">Laravel • MySQL</span>
+                    </div>
+                    <p class="muted mt-2">
+                        Platform e-commerce fashion dengan sistem pembayaran, keranjang belanja, manajemen produk, dan dashboard admin & user.
                     </p>
+                    <div class="chips mt-3">
+                        <span class="chip">Joki Skripsi</span>
+                        <span class="chip">Payment Gateway</span>
+                        <span class="chip">Responsive</span>
+                    </div>
                 </div>
-                <div class="tl-item reveal">
-                    <div class="tl-dot" aria-hidden="true"></div>
-                    <h4>Deep Learning - Mango Leaf Disease Classification (CNN)</h4>
-                    <div class="meta">Nov 2024 -Jan 2025 · Politeknik Caltex Riau (Academic Projects)</div>
-                    <p class="mt-2 muted">Membangun model CNN dengan akurasi 95% untuk klasifikasi penyakit daun mangga
-                        dan Mengintegrasikan model ke dalam website interaktif untuk digunakan pengguna.</p>
-                </div>
-                <div class="tl-item reveal">
-                    <div class="tl-dot" aria-hidden="true"></div>
-                    <h4>Deep Learning & Mobile App Chili Leaf Disease Classification (CNN, VGG-16) – PA</h4>
-                    <div class="meta">Nov 2024 - May 2025 · Politeknik Caltex Riau (Project Akhir)</div>
-                    <p class="mt-2 muted">Membangun model CNN dengan akurasi 92% dan model VGG-16 dengan akurasi 99%
-                        untuk klasifikasi penyakit daun cabai dan membangun aplikasi seluler berbasis Android yang
-                        terintegrasi dengan model untuk deteksi penyakit secara langsung.</p>
-                </div>
-                <div class="tl-item reveal">
-                    <div class="tl-dot"></div>
-                    <h4>Data Visualization - Netflix Dataset (Tableau)</h4>
-                    <div class="meta">Nov 2022 – Jan 2023· Politeknik Caltex Riau (Academic Projects)</div>
-                    <p class="mt-2 muted">Membuat 5 grafik interaktif dan 3 dasbor menggunakan Tableau untuk
-                        menganalisis pola konten Netflix dan Menghasilkan wawasan tentang tren genre dan distribusi
-                        konten untuk rekomendasi strategis.</p>
-                </div>
-                <div class="tl-item reveal">
-                    <div class="tl-dot"></div>
-                    <h4>System Analyst / Back‑End — Sumatera Jobs Center</h4>
-                    <div class="meta">Jun 2022 — Jul 2022</div>
-                    <p class="mt-2 muted">Mengembangkan aplikasi berbasis web menggunakan framework Laravel, Merancang
-                        halaman arahan dan dasbor pengguna untuk memudahkan navigasi pengguna dan Menguji kinerja
-                        aplikasi menggunakan Apache JMeter, menghasilkan optimasi waktu muat hingga ±30%.</p>
-                </div>
-                <div class="tl-item reveal">
-                    <div class="tl-dot"></div>
-                    <h4>PHP Developer — Cha’s Olshop</h4>
-                    <div class="meta">Jun 2022 — Aug 2022</div>
-                    <p class="mt-2 muted">Membangun dasbor pelanggan dengan sistem peran untuk menyederhanakan manajemen
-                        katalog, Mengembangkan fitur katalog CRUD untuk kontrol admin dan Mengintegrasikan fitur
-                        pemesanan WhatsApp untuk proses pemesanan yang lebih cepat dan nyaman.</p>
-                </div>
-                <div class="tl-item reveal">
-                    <div class="tl-dot"></div>
-                    <h4>System Analyst / Java Developer — Nina Laundry</h4>
-                    <div class="meta">Jun 2022 — Jul 2022</div>
-                    <p class="mt-2 muted">Merancang antarmuka, arsitektur, dan alur proses bisnis untuk sistem pemesanan
-                        laundry, Menerapkan konsep OOP dalam pengembangan aplikasi berbasis Java dan Mengembangkan
-                        beranda dan halaman pemesanan untuk memfasilitasi pemesanan online bagi pelanggan.</p>
-                </div>
+            </article>
+                
+                <!-- Project 3 -->
+                <article class="project card reveal">
+                    <div class="thumb">
+                        <img src="gambar/project (3).jpeg" 
+                             alt="Website Jasa & Kursus" 
+                             onerror="this.parentElement.innerHTML='Website Jasa & Kursus'">
+                    </div>
+                    <div class="body">
+                        <div class="flex items-center justify-between wrap">
+                            <h3>Website Jasa dan Kursus Jahit (Putri Taylor)</h3>
+                            <span class="badge">Laravel • MySQL</span>
+                        </div>
+                        <p class="muted mt-2">
+                            Website jasa jahit dan kursus menjahit dengan sistem pendaftaran online, galeri portfolio, dan manajemen kursus, juga penanganan pemesanan jasa jahit.
+                        </p>
+                        <div class="chips mt-3">
+                            <span class="chip">Joki Skripsi</span>
+                            <span class="chip">Booking System</span>
+                            <span class="chip">Handel Users</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 4 -->
+                <article class="project card reveal">
+                    <div class="thumb">
+                        <video 
+                            src="gambar/project (1).mp4" 
+                            autoplay 
+                            loop 
+                            muted 
+                            playsinline 
+                            onerror="this.parentElement.innerHTML='Video tidak dapat dimuat'">
+                        </video>
+                    </div>
+                    <div class="body">
+                        <div class="flex items-center justify-between wrap">
+                            <h3>Aplikasi Mobile Bengkel</h3>
+                            <span class="badge">React Native • MySQL</span>
+                        </div>
+                        <p class="muted mt-2">
+                            Aplikasi mobile untuk manajemen bengkel dengan fitur booking service, tracking perbaikan, dan riwayat servis kendaraan layanan Google API dan payment gateway.
+                        </p>
+                        <div class="chips mt-3">
+                            <span class="chip">Joki Skripsi</span>
+                            <span class="chip">Mobile App</span>
+                            <span class="chip">Real-time Tracking</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project 5 -->
+                <article class="project card reveal">
+                    <div class="thumb">
+                    <img src="gambar/project (2).jpeg" 
+                             alt="HRIS Lotte Mart" 
+                             onerror="this.parentElement.innerHTML='HRIS Lotte Mart'">
+                    </div>
+                    <div class="body">
+                        <div class="flex items-center justify-between wrap">
+                            <h3>Website HRIS Lotte Mart</h3>
+                            <span class="badge">Laravel • MySQL</span>
+                        </div>
+                        <p class="muted mt-2">
+                            Sistem informasi SDM untuk Lotte Mart dengan fitur absensi, payroll, cuti, dan manajemen karyawan yang lengkap.
+                        </p>
+                        <div class="chips mt-3">
+                            <span class="chip">Joki Skripsi</span>
+                            <span class="chip">HRIS</span>
+                            <span class="chip">Payroll System</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 6 -->
+                <article class="project card reveal">
+                    <div class="thumb">
+                    <img src="gambar/project (6).png"  
+                             alt="Deteksi Tanaman Mobile" 
+                             onerror="this.parentElement.innerHTML='Deteksi Tanaman Mobile'">
+                    </div>
+                    <div class="body">
+                        <div class="flex items-center justify-between wrap">
+                            <h3>Aplikasi Deteksi Mobile Tanaman</h3>
+                            <span class="badge">React Native • MySQL</span>
+                        </div>
+                        <p class="muted mt-2">
+                            Aplikasi mobile untuk mendeteksi jenis tanaman menggunakan kamera dengan teknologi image recognition dan database daun cabai.
+                        </p>
+                        <div class="chips mt-3">
+                            <span class="chip">Joki Skripsi</span>
+                            <span class="chip">Mobile Image Recognition</span>
+                            <span class="chip">Machine Learning</span>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <section id="education">
+    <!-- ========== TESTIMONIALS SECTION ========== -->
+    <section id="testimoni">
         <div class="container">
-            <h2 class="section-title">Pendidikan & Sertifikasi</h2>
-            <p class="section-desc">Landasan akademik dan pengakuan kompetensi.</p>
+            <h2 class="section-title">Testimoni Klien</h2>
+            <p class="section-desc">Apa kata klien yang telah menggunakan jasa saya.</p>
+            
             <div class="grid grid-2">
-                <div class="card padded reveal">
-                    <h3 class="mb-0">Politeknik Caltex Riau — D4 Teknik Informatika</h3>
-                    <p class="muted mt-2">IPK 3.54/4.00 · 2021 — 2025</p>
+                <!-- Testimonial 1 -->
+                <div class="testimonial reveal">
+                    <p>
+                        "Yoga sangat profesional dalam pengerjaan website company profile saya. Hasilnya sesuai ekspektasi dan dikerjakan tepat waktu. Recommended!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">A</div>
+                        <div>
+                            <h4 class="mb-0">Andi Wijaya</h4>
+                            <p class="muted">Pemilik Bisnis</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card padded reveal">
-                    <h3 class="mb-0">Sertifikasi</h3>
-                    <p class="muted mt-2">LSP — Database Programmer Supervisor</p>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial reveal">
+                    <p>
+                        "Terima kasih atas bantuan joki skripsinya. Coding aplikasi penelitian saya selesai dengan baik dan dokumentasinya lengkap. Sangat membantu!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">S</div>
+                        <div>
+                            <h4 class="mb-0">Sari Dewi</h4>
+                            <p class="muted">Mahasiswa</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section id="organization">
-        <div class="container">
-            <h2 class="section-title">Pengalaman Organisasi</h2>
-            <p class="section-desc">Kegiatan organisasi yang mendukung leadership & teamwork.</p>
-            <div class="timeline">
-                <div class="tl-item reveal">
-                    <div class="tl-dot"></div>
-                    <h4> Caltex Techno Scientist Mobile — Anggota</h4>
-                    <div class="meta">Sep 2023 – Jan 2025</div>
-                    <ul class="muted mt-2">
-                        <li>Terlibat dalam pengembangan aplikasi mobile dari tahap perancangan hingga build.</li>
-                        <li>Membuat konsep, wireframe, dan desain antarmuka aplikasi</li>
-                        <li>Mengimplementasikan logika bisnis dan fitur aplikasi mobile.</li>
-                        <li>Melakukan Testing, debugging, dan deployment</li>
-                    </ul>
+                <div class="testimonial reveal">
+                    <p>"Pembelajaran coding bersama Yoga sangat mudah dipahami. Metode pengajarannya praktis dan langsung praktek. Sekarang saya sudah bisa bikin website sendiri."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">R</div>
+                        <div>
+                            <h4 class="mb-0">Rizki Pratama</h4>
+                            <p class="muted">Peserta Bimbingan</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="tl-item reveal">
-                    <div class="tl-dot"></div>
-                    <h4>Information Technology Olympiade (ITO) — Bendahara</h4>
-                    <div class="meta">Sep 2023 – Nov 2023</div>
-                    <ul class="muted mt-2">
-                        <li>Menyusun dan mengelola anggaran sesuai kebutuhan organisasi.</li>
-                        <li>Mencatat semua transaksi keuangan dan membuat laporan berkala.</li>
-                        <li>Menyampaikan laporan keuangan secara rutin kepada anggota organisasi.</li>
-                    </ul>
+                <div class="testimonial reveal">
+                    <p>"Website e-commerce yang dibuat sesuai kebutuhan toko online saya. Fiturnya lengkap dan responsive. Pelayanannya juga ramah dan komunikatif."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">D</div>
+                        <div>
+                            <h4 class="mb-0">Diana Sari</h4>
+                            <p class="muted">Online Shop Owner</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ========== CONTACT SECTION ========== -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Kontak</h2>
+            <h2 class="section-title">Hubungi Saya</h2>
             <div class="contact-info">
                 <ul>
-                    <li><strong>Email:</strong> <a href="mailto:ulfadamayanti79@gmail.com">ulfadamayanti79@gmail.com</a>
-                    </li>
-                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ulfa-damayanti-/"
-                            target="_blank">linkedin.com/in/ulfa-damayanti</a></li>
-                    <li><strong>GitHub:</strong> <a href="https://github.com/ulfa03"
-                            target="_blank">github.com/ulfa03</a></li>
-                    <li><strong>Telepon:</strong> <a href="tel:+6282387325740">+62 823-8732-5740</a></li>
-                    <li><strong>Lokasi:</strong> Pondok Kelapa, Duren Sawit, Jakarta Timur. </li>
+                    <li><strong>Email:</strong> <a href="mailto:yoga15032813@gmail.com">yoga15032813@gmail.com</a></li>
+                    <li><strong>WhatsApp:</strong> <a href="https://wa.me/6281280686817" target="_blank">081280686817</a></li>
+                    <li><strong>Instagram:</strong> <a href="https://www.instagram.com/yoga_nditya" target="_blank">yoga_nditya</a></li>
                 </ul>
             </div>
 
             <div class="contact-cta">
-                <a href="mailto:ulfadamayanti79@gmail.com" class="btn">Email Saya</a>
-                <a href="https://www.linkedin.com/in/ulfa-damayanti-/" target="_blank" class="btn">Hubungi di
-                    LinkedIn</a>
+                <a href="https://wa.me/6281280686817" class="btn" target="_blank">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M.5 12a11.5 11.5 0 0 0 1.7 6.1L0 24l6-2a11.5 11.5 0 1 0-5.5-9.9Zm11.5 9.5a9.5 9.5 0 1 1 0-19 9.5 9.5 0 0 1 0 19Zm-4-6.6c.2.4 1.1 2.1 3.5 3 2.4 1 2.9.7 3.4.6.6-.1 1.8-.8 2-1.6.2-.8.2-1.5.1-1.6l-1.6-.9c-.1 0-.3-.1-.5.2-.2.3-.6.8-.8.9-.2.1-.4.2-.8 0-.4-.1-1.6-.6-2.9-1.9-1.1-1.1-1.9-2.4-2.1-2.8-.2-.4 0-.6.1-.8.1-.2.2-.3.3-.5.1-.2.1-.3 0-.5L8 9.1c-.1-.1-.3-.2-.5-.2-.2 0-.5 0-.8.4-.3.4-1 1-1 2.5 0 1.5 1 3 1.3 3.1Z" />
+                    </svg>
+                    Chat WhatsApp
+                </a>
+                <a href="mailto:yoga15032813@gmail.com" class="btn">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16v16H4z" />
+                        <path d="m22 4-10 8L2 4" />
+                    </svg>
+                    Kirim Email
+                </a>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container footer-inner">
-            <span>© <span id="year"></span> Ulfa Damayanti — Dibuat dengan HTML/CSS/JS</span>
+            <span>© <span id="year"></span> Yoga — Software Developer at LippoMalls Indonesia & Freelance Web Developer</span>
             <a class="badge" href="#home"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2">
                     <path d="m18 15-6-6-6 6" />
@@ -1052,22 +984,55 @@
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Ulfa Damayanti",
-    "jobTitle": "Data Analyst & ML Enthusiast",
+    "name": "Yoga",
+    "jobTitle": "Software Developer at LippoMalls Indonesia & Freelance Web Developer",
     "url": "https://example.com",
-    "email": "mailto:ulfadamayanti79@gmail.com",
-    "knowsAbout": ["SQL","Python","Tableau","Power BI","CNN","VGG16"],
-    "address": {"@type": "PostalAddress","addressLocality": "Pekanbaru","addressRegion": "Riau","addressCountry": "ID"}
+    "email": "mailto:yoga15032813@gmail.com",
+    "knowsAbout": ["Web Development","PHP","Laravel","JavaScript","Python","Machine Learning"],
+    "address": {"@type": "PostalAddress","addressLocality": "Jakarta","addressRegion": "DKI Jakarta","addressCountry": "ID"}
   }
   </script>
 
     <script>
-        const root = document.documentElement; const themeBtn = document.getElementById('themeBtn'); const sun = document.getElementById('sun'); const moon = document.getElementById('moon'); const saved = localStorage.getItem('theme'); if (saved) { document.documentElement.setAttribute('data-theme', saved); if (saved === 'light') { sun.classList.remove('hidden'); moon.classList.add('hidden') } else { sun.classList.add('hidden'); moon.classList.remove('hidden') } } themeBtn?.addEventListener('click', () => { const cur = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light'; document.documentElement.setAttribute('data-theme', cur); localStorage.setItem('theme', cur); if (cur === 'light') { sun.classList.remove('hidden'); moon.classList.add('hidden') } else { sun.classList.add('hidden'); moon.classList.remove('hidden') } });
-        const openMenu = document.getElementById('openMenu'); const mobileMenu = document.getElementById('mobileMenu'); openMenu?.addEventListener('click', () => { const expanded = openMenu.getAttribute('aria-expanded') === 'true'; openMenu.setAttribute('aria-expanded', String(!expanded)); mobileMenu.classList.toggle('hidden'); mobileMenu.setAttribute('aria-hidden', String(expanded)); });
-        const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target) } }) }, { threshold: .15 }); document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-        const toTop = document.getElementById('toTop'); window.addEventListener('scroll', () => { const show = window.scrollY > 500; toTop.classList.toggle('show', show) });
+        const openMenu = document.getElementById('openMenu'); 
+        const mobileMenu = document.getElementById('mobileMenu'); 
+        openMenu?.addEventListener('click', () => { 
+            const expanded = openMenu.getAttribute('aria-expanded') === 'true'; 
+            openMenu.setAttribute('aria-expanded', String(!expanded)); 
+            mobileMenu.classList.toggle('hidden'); 
+            mobileMenu.setAttribute('aria-hidden', String(expanded)); 
+        });
+        
+        const observer = new IntersectionObserver((entries) => { 
+            entries.forEach(e => { 
+                if (e.isIntersecting) { 
+                    e.target.classList.add('visible'); 
+                    observer.unobserve(e.target) 
+                } 
+            }) 
+        }, { threshold: .15 }); 
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        
+        // Observer untuk section
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        document.querySelectorAll('section').forEach(section => {
+            sectionObserver.observe(section);
+        });
+        
+        const toTop = document.getElementById('toTop'); 
+        window.addEventListener('scroll', () => { 
+            const show = window.scrollY > 500; 
+            toTop.classList.toggle('show', show) 
+        });
+        
         document.getElementById('year').textContent = new Date().getFullYear();
-        function submitContact(form) { const data = new FormData(form); const name = encodeURIComponent(data.get('name')); const email = encodeURIComponent(data.get('email')); const subject = encodeURIComponent(data.get('subject')) || 'Data Inquiry'; const message = encodeURIComponent(data.get('message')); const body = `Halo, saya ${name}%0AEmail: ${email}%0A%0A${message}`; window.location.href = `mailto:ulfadamayanti79@gmail.com?subject=${subject}&body=${body}`; return false } window.submitContact = submitContact;
     </script>
 </body>
 
